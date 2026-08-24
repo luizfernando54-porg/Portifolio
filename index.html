@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- SEO Meta Tags -->
   <title>Luiz Fernando | Desenvolvedor Frontend &amp; Redes</title>
   <meta name="description"
     content="Portfólio de Luiz Fernando Gervásio da Silva. Graduando em ADS (FICR), Técnico em Redes de Computadores e desenvolvedor web com foco em frontend.">
@@ -13,30 +12,25 @@
     content="Luiz Fernando, Desenvolvedor Frontend, React, JavaScript, HTML5, CSS3, Redes de Computadores, Suporte Técnico, ADS, FICR, Recife">
   <meta name="author" content="Luiz Fernando Gervásio da Silva">
 
-  <!-- Favicon Icon -->
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
 
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700;800&display=swap"
     rel="stylesheet">
 
-  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- Dynamic Cyber Grid & Canvas Background -->
   <canvas id="bg-canvas"></canvas>
   <div class="ambient-grid-overlay"></div>
   <div class="ambient-glow-spot ambient-glow-1"></div>
   <div class="ambient-glow-spot ambient-glow-2"></div>
 
-  <!-- Header / Navigation Bar -->
   <header class="site-header" id="header">
     <div class="container nav-container">
       <a href="#home" class="logo" id="logo-link">
@@ -44,7 +38,6 @@
         <span>LUIZ<span class="gradient-text">.DEV</span></span>
       </a>
 
-      <!-- Desktop Navigation Links -->
       <nav>
         <ul class="nav-menu" id="nav-menu">
           <li><a href="#home" class="nav-link active">Início</a></li>
@@ -57,7 +50,7 @@
         </ul>
       </nav>
 
-      <!-- Nav Actions -->
+    
       <div class="nav-actions">
         <button class="btn-icon theme-toggle" id="theme-toggle" aria-label="Alternar tema" title="Alternar tema">
           <span id="theme-icon">🌙</span>
@@ -69,11 +62,10 @@
   </header>
 
   <main>
-    <!-- HERO SECTION -->
+
     <section class="hero-section" id="home">
       <div class="container hero-grid">
 
-        <!-- Left: Hero Text & Pitch -->
         <div class="hero-text-content">
           <div class="hero-terminal-pill">
             <span class="pulse-dot"></span>
@@ -109,7 +101,6 @@
             </a>
           </div>
 
-          <!-- Quick Social Pills -->
           <div class="hero-socials">
             <a href="https://www.linkedin.com/in/luiz-fernando-0b28901a5" target="_blank" rel="noopener noreferrer"
               class="social-pill-btn" title="LinkedIn">
@@ -126,10 +117,8 @@
           </div>
         </div>
 
-        <!-- Right: Profile Photo + Developer Terminal Card -->
         <div class="hero-terminal-wrapper">
 
-          <!-- Profile Photo -->
           <div class="hero-avatar-wrap">
             <div class="hero-avatar-ring">
               <img
@@ -191,7 +180,6 @@
       </div>
     </section>
 
-    <!-- ABOUT SECTION (BENTO GRID) -->
     <section class="section" id="about">
       <div class="container">
         <div class="section-header">
@@ -202,7 +190,7 @@
         </div>
 
         <div class="about-bento-grid">
-          <!-- Left Bento: Biography -->
+      
           <div class="bento-card">
             <h3 class="bento-card-title">
               <span>⚡</span> Formação &amp; Foco de Atuação
@@ -241,7 +229,6 @@
             </div>
           </div>
 
-          <!-- Right Bento: Stats Column -->
           <div class="bento-card stats-column">
             <div class="stat-box">
               <div class="stat-num" data-target="3">0</div>
@@ -302,7 +289,6 @@
             <p class="skill-matrix-desc">Estruturação semântica, Flexbox, CSS Grid, variáveis e design responsivo.</p>
           </div>
 
-          <!-- 4. TypeScript -->
           <div class="skill-matrix-card" data-category="frontend backend">
             <div class="skill-matrix-top">
               <div class="skill-matrix-title">
@@ -313,9 +299,6 @@
             <p class="skill-matrix-desc">Noções de tipagem estática e interfaces aplicadas a componentes React.</p>
           </div>
 
-
-
-          <!-- 6. Suporte Técnico & Hardware -->
           <div class="skill-matrix-card" data-category="infra">
             <div class="skill-matrix-top">
               <div class="skill-matrix-title">
@@ -327,7 +310,6 @@
               usuários.</p>
           </div>
 
-          <!-- 7. Ferramentas de IA -->
           <div class="skill-matrix-card" data-category="tools">
             <div class="skill-matrix-top">
               <div class="skill-matrix-title">
@@ -339,9 +321,6 @@
               desenvolvimento.</p>
           </div>
 
-
-
-          <!-- 9. Node.js -->
           <div class="skill-matrix-card" data-category="backend">
             <div class="skill-matrix-top">
               <div class="skill-matrix-title">
@@ -360,7 +339,6 @@
       </div>
     </section>
 
-    <!-- REPOSITORIES & PROJECTS SECTION -->
     <section class="section" id="projects">
       <div class="container">
         <div class="section-header">
@@ -370,7 +348,6 @@
             de visualização.</p>
         </div>
 
-        <!-- Controls: Category Filters + View Mode Switcher -->
         <div class="projects-header-controls">
           <div class="project-category-filters">
             <button class="p-filter-btn active" data-filter="all">Pojeto academico</button>
@@ -381,10 +358,6 @@
               <span>📁 Modelo Repositório</span>
             </button>
             
-        <!-- MODEL 1: GITHUB REPOSITORIES GRID (DEFAULT) -->
-   
-
-          <!-- Repo 1: Universidade Heineken -->
           <div class="repo-card-item" data-category="frontend" data-project-id="heineken"
             style="border-left: 3px solid #10b981;">
             <div class="repo-card-header">
@@ -426,14 +399,8 @@
             </div>
           </div>
 
-          <!-- Repo 2: Synapse.AI -->
+       </div>
 
-
-         
-           
-        </div>
-
-        <!-- MODEL 2: VISUAL CARDS GRID (ALTERNATIVE) -->
         <div class="visual-cards-grid" id="visual-cards-grid" style="display: none;">
 
          
@@ -864,12 +831,6 @@
       </div>
     </div>
   </div>
-
- 
-  <div class="toast-container" id="toast-container"></div>
-
-  
-  <script src="script.js"></script>
 </body>
 
 </html>
