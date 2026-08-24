@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgFin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#022c22" />
+      <stop offset="100%" stop-color="#064e3b" />
+    </linearGradient>
+    <linearGradient id="cardGradFin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" rx="16" fill="url(#bgFin)"/>
+
+  <!-- Window Frame -->
+  <g transform="translate(50, 40)">
+    <rect width="700" height="420" rx="12" fill="#022c22" stroke="#065f46" stroke-width="1.5"/>
+    
+    <!-- Header -->
+    <rect width="700" height="45" rx="12" fill="#011e18"/>
+    <circle cx="25" cy="22" r="5" fill="#ef4444"/>
+    <circle cx="45" cy="22" r="5" fill="#f59e0b"/>
+    <circle cx="65" cy="22" r="5" fill="#10b981"/>
+    <text x="100" y="27" fill="#6ee7b7" font-size="14" font-weight="bold" font-family="sans-serif">VAULT<tspan fill="#ffffff">PAY</tspan> • Global Crypto &amp; Banking</text>
+
+    <!-- Credit Card Visual -->
+    <g transform="translate(40, 75)">
+      <rect width="280" height="170" rx="14" fill="url(#cardGradFin)" filter="drop-shadow(0 10px 15px rgba(0,0,0,0.5))"/>
+      <text x="25" y="40" fill="#ffffff" font-size="16" font-weight="bold" font-family="sans-serif">VAULT BLACK VIP</text>
+      <rect x="25" y="60" width="35" height="25" rx="4" fill="#fbbf24"/>
+      <text x="25" y="125" fill="#d1fae5" font-size="16" font-family="monospace" letter-spacing="2">•••• •••• •••• 9842</text>
+      <text x="25" y="150" fill="#a7f3d0" font-size="10" font-family="sans-serif">VALIDADE 08/29</text>
+      <text x="180" y="150" fill="#ffffff" font-size="14" font-weight="bold" font-family="sans-serif">VISA PLATINUM</text>
+    </g>
+
+    <!-- Balance & Stats -->
+    <g transform="translate(360, 75)">
+      <rect width="300" height="170" rx="12" fill="#064e3b" stroke="#047857" stroke-width="1"/>
+      <text x="25" y="35" fill="#a7f3d0" font-size="12" font-family="sans-serif">Saldo Total Multimoedas</text>
+      <text x="25" y="70" fill="#ffffff" font-size="28" font-weight="bold" font-family="sans-serif">$ 84.392,50</text>
+      <text x="25" y="95" fill="#34d399" font-size="11" font-family="sans-serif">▲ +$ 4.210 rendimentos (30d)</text>
+      
+      <!-- Quick Action Buttons -->
+      <g transform="translate(25, 115)">
+        <rect width="75" height="34" rx="6" fill="#10b981"/>
+        <text x="37" y="137" fill="#ffffff" font-size="11" font-weight="bold" font-family="sans-serif" text-anchor="middle">Enviar</text>
+
+        <rect x="85" y="0" width="75" height="34" rx="6" fill="#047857"/>
+        <text x="122" y="137" fill="#ffffff" font-size="11" font-weight="bold" font-family="sans-serif" text-anchor="middle">Receber</text>
+
+        <rect x="170" y="0" width="75" height="34" rx="6" fill="#047857"/>
+        <text x="207" y="137" fill="#ffffff" font-size="11" font-weight="bold" font-family="sans-serif" text-anchor="middle">Trocar</text>
+      </g>
+    </g>
+
+    <!-- Recent Transactions List -->
+    <g transform="translate(40, 265)">
+      <rect width="620" height="130" rx="10" fill="#011e18" stroke="#065f46" stroke-width="1"/>
+      <text x="20" y="28" fill="#6ee7b7" font-size="12" font-weight="bold" font-family="sans-serif">Transações Recentes</text>
+      
+      <!-- Tx 1 -->
+      <circle cx="35" cy="58" r="12" fill="#10b981" opacity="0.2"/>
+      <text x="35" y="62" fill="#10b981" font-size="12" text-anchor="middle">↓</text>
+      <text x="60" y="55" fill="#ffffff" font-size="11" font-weight="bold" font-family="sans-serif">Depósito Stripe Global Inc.</text>
+      <text x="60" y="70" fill="#6ee7b7" font-size="10" font-family="sans-serif">Hoje às 10:24 • Concluído</text>
+      <text x="590" y="63" fill="#10b981" font-size="13" font-weight="bold" font-family="sans-serif" text-anchor="end">+ $ 2.850,00</text>
+      
+      <!-- Tx 2 -->
+      <line x1="20" y1="82" x2="600" y2="82" stroke="#064e3b" stroke-width="1"/>
+      <circle cx="35" cy="104" r="12" fill="#ef4444" opacity="0.2"/>
+      <text x="35" y="108" fill="#ef4444" font-size="12" text-anchor="middle">↑</text>
+      <text x="60" y="101" fill="#ffffff" font-size="11" font-weight="bold" font-family="sans-serif">AWS Cloud Servers Ireland</text>
+      <text x="60" y="116" fill="#6ee7b7" font-size="10" font-family="sans-serif">Ontem às 21:15 • Automático</text>
+      <text x="590" y="109" fill="#f87171" font-size="13" font-weight="bold" font-family="sans-serif" text-anchor="end">- $ 149,20</text>
+    </g>
+  </g>
+</svg>

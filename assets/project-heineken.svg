@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="heinekenBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#052e16" />
+      <stop offset="100%" stop-color="#022c22" />
+    </linearGradient>
+    <linearGradient id="greenAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22c55e" />
+      <stop offset="100%" stop-color="#15803d" />
+    </linearGradient>
+    <linearGradient id="redStar" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#b91c1c" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="500" rx="16" fill="url(#heinekenBg)"/>
+
+  <!-- Window Frame -->
+  <g transform="translate(50, 40)">
+    <rect width="700" height="420" rx="12" fill="#0f172a" stroke="#15803d" stroke-width="1.5"/>
+    
+    <!-- Top Browser Bar -->
+    <rect width="700" height="45" rx="12" fill="#022c22"/>
+    <rect y="33" width="700" height="12" fill="#022c22"/>
+    
+    <!-- Window Controls -->
+    <circle cx="25" cy="22" r="5" fill="#ef4444"/>
+    <circle cx="45" cy="22" r="5" fill="#f59e0b"/>
+    <circle cx="65" cy="22" r="5" fill="#10b981"/>
+
+    <!-- URL Bar -->
+    <rect x="180" y="12" width="340" height="22" rx="6" fill="#064e3b"/>
+    <text x="350" y="27" fill="#86efac" font-size="10" font-family="sans-serif" text-anchor="middle">universidade-heineken-front-mu.vercel.app</text>
+
+    <!-- Platform Header / Brand -->
+    <g transform="translate(30, 65)">
+      <!-- Red Star Icon -->
+      <polygon points="20,5 25,18 38,18 28,26 32,39 20,31 8,39 12,26 2,18 15,18" fill="url(#redStar)"/>
+      <text x="50" y="26" fill="#ffffff" font-size="18" font-weight="900" font-family="sans-serif">UNIVERSIDADE <tspan fill="#22c55e">HEINEKEN</tspan></text>
+      <text x="50" y="44" fill="#86efac" font-size="11" font-family="sans-serif">Portal de Onboarding, Treinamento &amp; Capacitação de Novos Colaboradores</text>
+    </g>
+
+    <!-- Content Modules Preview -->
+    <!-- Module 1: Video Class -->
+    <g transform="translate(30, 130)">
+      <rect width="310" height="150" rx="10" fill="#022c22" stroke="#166534" stroke-width="1"/>
+      <rect x="15" y="15" width="280" height="85" rx="6" fill="#052e16"/>
+      <circle cx="155" cy="57" r="20" fill="#22c55e" opacity="0.9"/>
+      <polygon points="150,49 165,57 150,65" fill="#ffffff"/>
+      <text x="15" y="120" fill="#ffffff" font-size="12" font-weight="bold" font-family="sans-serif">Módulo 1: Cultura &amp; Boas-Vindas</text>
+      <text x="15" y="136" fill="#86efac" font-size="10" font-family="sans-serif">Vídeoaula interativa • 15 min de duração</text>
+    </g>
+
+    <!-- Module 2: Interactive Quiz -->
+    <g transform="translate(360, 130)">
+      <rect width="310" height="150" rx="10" fill="#022c22" stroke="#166534" stroke-width="1"/>
+      <text x="20" y="32" fill="#22c55e" font-size="11" font-weight="bold" font-family="sans-serif">📝 AVALIAÇÃO DE CONHECIMENTO</text>
+      <text x="20" y="55" fill="#ffffff" font-size="13" font-weight="bold" font-family="sans-serif">Quiz de Integração Corporativa</text>
+      
+      <!-- Quiz Option A -->
+      <rect x="20" y="70" width="270" height="28" rx="6" fill="#064e3b" stroke="#22c55e" stroke-width="1"/>
+      <text x="35" y="88" fill="#ffffff" font-size="10" font-family="sans-serif">✓ Resposta Selecionada (100% Correta)</text>
+      
+      <!-- Quiz Option B -->
+      <rect x="20" y="106" width="270" height="28" rx="6" fill="#052e16"/>
+      <text x="35" y="124" fill="#6ee7b7" font-size="10" font-family="sans-serif">○ Próxima pergunta do módulo</text>
+    </g>
+
+    <!-- User Progress Bar & Badges -->
+    <g transform="translate(30, 300)">
+      <rect width="640" height="95" rx="10" fill="#064e3b" stroke="#15803d" stroke-width="1"/>
+      <text x="20" y="30" fill="#ffffff" font-size="13" font-weight="bold" font-family="sans-serif">Trilha do Colaborador: 85% Concluído</text>
+      <text x="560" y="30" fill="#86efac" font-size="12" font-weight="bold" font-family="sans-serif">Nível Pro</text>
+
+      <!-- Progress Fill -->
+      <rect x="20" y="45" width="600" height="10" rx="5" fill="#052e16"/>
+      <rect x="20" y="45" width="510" height="10" rx="5" fill="url(#greenAccent)"/>
+
+      <text x="20" y="78" fill="#bbf7d0" font-size="11" font-family="sans-serif">Certificado de Conclusão de Onboarding liberado após o módulo 4.</text>
+      <rect x="510" y="62" width="110" height="24" rx="6" fill="#22c55e"/>
+      <text x="565" y="78" fill="#022c22" font-size="10" font-weight="bold" font-family="sans-serif" text-anchor="middle">Acessar Painel ➔</text>
+    </g>
+  </g>
+</svg>

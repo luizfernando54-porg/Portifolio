@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgSaaS" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="purpleGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="chartGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="500" rx="16" fill="url(#bgSaaS)"/>
+  
+  <!-- Subtle Background Grid -->
+  <g stroke="#334155" stroke-width="0.5" opacity="0.25">
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="200" y1="0" x2="200" y2="500"/>
+    <line x1="400" y1="0" x2="400" y2="500"/>
+    <line x1="600" y1="0" x2="600" y2="500"/>
+  </g>
+
+  <!-- SaaS UI Window Frame -->
+  <g transform="translate(50, 40)">
+    <!-- Window Bar -->
+    <rect width="700" height="420" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <rect width="700" height="40" rx="12" fill="#0f172a"/>
+    <rect y="28" width="700" height="12" fill="#0f172a"/>
+    
+    <!-- Window Dots -->
+    <circle cx="25" cy="20" r="5" fill="#ef4444"/>
+    <circle cx="45" cy="20" r="5" fill="#f59e0b"/>
+    <circle cx="65" cy="20" r="5" fill="#10b981"/>
+
+    <!-- Search/URL Bar -->
+    <rect x="180" y="10" width="340" height="20" rx="6" fill="#1e293b"/>
+    <text x="350" y="24" fill="#94a3b8" font-size="10" font-family="sans-serif" text-anchor="middle">app.cloudscale-analytics.io/dashboard</text>
+
+    <!-- Sidebar -->
+    <rect x="0" y="40" width="130" height="380" fill="#090d16" opacity="0.6"/>
+    <!-- Sidebar Menu Items -->
+    <rect x="15" y="65" width="100" height="26" rx="6" fill="#6366f1" opacity="0.2"/>
+    <text x="35" y="82" fill="#818cf8" font-size="11" font-family="sans-serif" font-weight="600">📊 Visão Geral</text>
+    
+    <text x="35" y="122" fill="#64748b" font-size="11" font-family="sans-serif">📈 Métricas</text>
+    <text x="35" y="157" fill="#64748b" font-size="11" font-family="sans-serif">👥 Clientes</text>
+    <text x="35" y="192" fill="#64748b" font-size="11" font-family="sans-serif">⚡ Automações</text>
+    <text x="35" y="227" fill="#64748b" font-size="11" font-family="sans-serif">⚙️ Ajustes</text>
+
+    <!-- Main Content Area -->
+    <!-- Top Stat Cards -->
+    <g transform="translate(150, 60)">
+      <!-- Card 1 -->
+      <rect width="160" height="75" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="16" y="25" fill="#94a3b8" font-size="11" font-family="sans-serif">Receita Mensal (MRR)</text>
+      <text x="16" y="52" fill="#ffffff" font-size="18" font-weight="bold" font-family="sans-serif">R$ 148.950</text>
+      <text x="16" y="68" fill="#10b981" font-size="10" font-family="sans-serif">▲ +24.8% este mês</text>
+
+      <!-- Card 2 -->
+      <g transform="translate(180, 0)">
+        <rect width="160" height="75" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+        <text x="16" y="25" fill="#94a3b8" font-size="11" font-family="sans-serif">Usuários Ativos</text>
+        <text x="16" y="52" fill="#ffffff" font-size="18" font-weight="bold" font-family="sans-serif">38.420</text>
+        <text x="16" y="68" fill="#10b981" font-size="10" font-family="sans-serif">▲ +12.3% tempo real</text>
+      </g>
+
+      <!-- Card 3 -->
+      <g transform="translate(360, 0)">
+        <rect width="160" height="75" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+        <text x="16" y="25" fill="#94a3b8" font-size="11" font-family="sans-serif">Conversão de Leads</text>
+        <text x="16" y="52" fill="#ffffff" font-size="18" font-weight="bold" font-family="sans-serif">6.84%</text>
+        <text x="16" y="68" fill="#38bdf8" font-size="10" font-family="sans-serif">● Meta atingida</text>
+      </g>
+    </g>
+
+    <!-- Interactive Graph Area -->
+    <g transform="translate(150, 155)">
+      <rect width="520" height="170" rx="10" fill="#0b1120" stroke="#1e293b" stroke-width="1"/>
+      <text x="20" y="28" fill="#f8fafc" font-size="13" font-weight="bold" font-family="sans-serif">Performance de Tráfego &amp; Conversão</text>
+      
+      <!-- Graph Area Fill -->
+      <path d="M 30 135 Q 90 90, 150 110 T 270 60 T 390 85 T 490 35 L 490 145 L 30 145 Z" fill="url(#chartGrad)" />
+      <!-- Main Line -->
+      <path d="M 30 135 Q 90 90, 150 110 T 270 60 T 390 85 T 490 35" fill="none" stroke="url(#purpleGlow)" stroke-width="3.5" stroke-linecap="round"/>
+      
+      <!-- Secondary Comparison Line -->
+      <path d="M 30 140 Q 110 130, 200 115 T 350 110 T 490 95" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4 4"/>
+      
+      <!-- Data Point Pulse -->
+      <circle cx="390" cy="85" r="5" fill="#a855f7" stroke="#ffffff" stroke-width="2"/>
+      <circle cx="490" cy="35" r="6" fill="#38bdf8" stroke="#ffffff" stroke-width="2"/>
+    </g>
+
+    <!-- Bottom Mini Activity -->
+    <g transform="translate(150, 340)">
+      <rect width="520" height="60" rx="8" fill="#0f172a" stroke="#1e293b"/>
+      <circle cx="35" cy="30" r="14" fill="#10b981" opacity="0.2"/>
+      <text x="35" y="34" fill="#10b981" font-size="12" text-anchor="middle">✓</text>
+      <text x="65" y="27" fill="#f1f5f9" font-size="11" font-weight="bold" font-family="sans-serif">Sincronização com IA Concluída</text>
+      <text x="65" y="44" fill="#64748b" font-size="10" font-family="sans-serif">Última atualização de dados há 2 minutos • API Latência 18ms</text>
+    </g>
+  </g>
+</svg>

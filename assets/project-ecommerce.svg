@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgEcom" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181b" />
+      <stop offset="100%" stop-color="#27272a" />
+    </linearGradient>
+    <linearGradient id="accentEcom" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3f3f46" />
+      <stop offset="100%" stop-color="#27272a" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" rx="16" fill="url(#bgEcom)"/>
+
+  <!-- E-commerce Store Mockup Frame -->
+  <g transform="translate(50, 40)">
+    <rect width="700" height="420" rx="12" fill="#18181b" stroke="#3f3f46" stroke-width="1.5"/>
+    <!-- Top Nav -->
+    <rect width="700" height="50" rx="12" fill="#09090b"/>
+    <rect y="38" width="700" height="12" fill="#09090b"/>
+    
+    <!-- Logo & Brand -->
+    <text x="30" y="32" fill="#f59e0b" font-size="16" font-weight="900" font-family="sans-serif">NEXUS<tspan fill="#ffffff">STORE</tspan></text>
+    
+    <!-- Nav Links -->
+    <text x="210" y="30" fill="#f4f4f5" font-size="12" font-family="sans-serif">Lançamentos</text>
+    <text x="310" y="30" fill="#a1a1aa" font-size="12" font-family="sans-serif">Hardware</text>
+    <text x="395" y="30" fill="#a1a1aa" font-size="12" font-family="sans-serif">Acessórios</text>
+    <text x="485" y="30" fill="#a1a1aa" font-size="12" font-family="sans-serif">Suporte</text>
+
+    <!-- Search & Cart -->
+    <rect x="570" y="14" width="80" height="24" rx="12" fill="url(#accentEcom)"/>
+    <text x="610" y="30" fill="#ffffff" font-size="11" font-weight="bold" font-family="sans-serif" text-anchor="middle">🛒 Carrinho (3)</text>
+
+    <!-- Hero Banner Promo -->
+    <g transform="translate(25, 65)">
+      <rect width="650" height="110" rx="10" fill="url(#cardGrad)" stroke="#52525b" stroke-width="1"/>
+      <text x="30" y="45" fill="#f59e0b" font-size="11" font-weight="bold" font-family="sans-serif" letter-spacing="1">NOVA GERAÇÃO PRO 2026</text>
+      <text x="30" y="75" fill="#ffffff" font-size="20" font-weight="bold" font-family="sans-serif">Headset Wireless Ultra-Low Latency</text>
+      <text x="30" y="95" fill="#a1a1aa" font-size="11" font-family="sans-serif">Áudio espacial 3D, cancelamento de ruído ativo e 60h de bateria.</text>
+      
+      <rect x="490" y="38" width="130" height="35" rx="8" fill="url(#accentEcom)"/>
+      <text x="555" y="60" fill="#ffffff" font-size="12" font-weight="bold" font-family="sans-serif" text-anchor="middle">Comprar Agora ➔</text>
+    </g>
+
+    <!-- Product Grid -->
+    <g transform="translate(25, 190)">
+      <!-- Item 1 -->
+      <rect width="200" height="205" rx="8" fill="#121214" stroke="#27272a" stroke-width="1"/>
+      <rect x="15" y="15" width="170" height="95" rx="6" fill="#27272a"/>
+      <text x="100" y="68" fill="#71717a" font-size="28" text-anchor="middle">⌨️</text>
+      <text x="15" y="130" fill="#f4f4f5" font-size="12" font-weight="bold" font-family="sans-serif">Teclado Mecânico RGB</text>
+      <text x="15" y="148" fill="#10b981" font-size="10" font-family="sans-serif">★★★★★ (142)</text>
+      <text x="15" y="175" fill="#ffffff" font-size="15" font-weight="bold" font-family="sans-serif">R$ 549,00</text>
+      <rect x="130" y="158" width="55" height="26" rx="6" fill="#3f3f46"/>
+      <text x="157" y="175" fill="#ffffff" font-size="10" font-family="sans-serif" font-weight="bold" text-anchor="middle">+ Add</text>
+
+      <!-- Item 2 -->
+      <g transform="translate(225, 0)">
+        <rect width="200" height="205" rx="8" fill="#121214" stroke="#27272a" stroke-width="1"/>
+        <rect x="15" y="15" width="170" height="95" rx="6" fill="#27272a"/>
+        <text x="100" y="68" fill="#71717a" font-size="28" text-anchor="middle">🖱️</text>
+        <text x="15" y="130" fill="#f4f4f5" font-size="12" font-weight="bold" font-family="sans-serif">Mouse Gamer 26K DPI</text>
+        <text x="15" y="148" fill="#10b981" font-size="10" font-family="sans-serif">★★★★★ (89)</text>
+        <text x="15" y="175" fill="#ffffff" font-size="15" font-weight="bold" font-family="sans-serif">R$ 389,00</text>
+        <rect x="130" y="158" width="55" height="26" rx="6" fill="#3f3f46"/>
+        <text x="157" y="175" fill="#ffffff" font-size="10" font-family="sans-serif" font-weight="bold" text-anchor="middle">+ Add</text>
+      </g>
+
+      <!-- Item 3 -->
+      <g transform="translate(450, 0)">
+        <rect width="200" height="205" rx="8" fill="#121214" stroke="#27272a" stroke-width="1"/>
+        <rect x="15" y="15" width="170" height="95" rx="6" fill="#27272a"/>
+        <text x="100" y="68" fill="#71717a" font-size="28" text-anchor="middle">🎧</text>
+        <text x="15" y="130" fill="#f4f4f5" font-size="12" font-weight="bold" font-family="sans-serif">Audio Interface Studio</text>
+        <text x="15" y="148" fill="#10b981" font-size="10" font-family="sans-serif">★★★★★ (215)</text>
+        <text x="15" y="175" fill="#ffffff" font-size="15" font-weight="bold" font-family="sans-serif">R$ 890,00</text>
+        <rect x="130" y="158" width="55" height="26" rx="6" fill="#3f3f46"/>
+        <text x="157" y="175" fill="#ffffff" font-size="10" font-family="sans-serif" font-weight="bold" text-anchor="middle">+ Add</text>
+      </g>
+    </g>
+  </g>
+</svg>

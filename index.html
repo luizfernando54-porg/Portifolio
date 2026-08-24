@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>Luiz Fernando | Desenvolvedor Frontend &amp; Redes</title>
+  <meta name="description"
+    content="Portfólio de Luiz Fernando Gervásio da Silva. Graduando em ADS (FICR), Técnico em Redes de Computadores e desenvolvedor web com foco em frontend.">
+  <meta name="keywords"
+    content="Luiz Fernando, Desenvolvedor Frontend, React, JavaScript, HTML5, CSS3, Redes de Computadores, Suporte Técnico, ADS, FICR, Recife">
+  <meta name="author" content="Luiz Fernando Gervásio da Silva">
+
+  <!-- Favicon Icon -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Dynamic Cyber Grid & Canvas Background -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="ambient-grid-overlay"></div>
+  <div class="ambient-glow-spot ambient-glow-1"></div>
+  <div class="ambient-glow-spot ambient-glow-2"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="#home" class="logo" id="logo-link">
+        <span class="logo-badge">&lt;/&gt;</span>
+        <span>LUIZ<span class="gradient-text">.DEV</span></span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link active">Início</a></li>
+          <li><a href="#about" class="nav-link">Sobre</a></li>
+          <li><a href="#skills" class="nav-link">Habilidades</a></li>
+          <li><a href="#projects" class="nav-link">Repositórios</a></li>
+          <li><a href="#experience" class="nav-link">Trajetória</a></li>
+          <li><a href="#competencies" class="nav-link">Competências</a></li>
+          <li><a href="#contact" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <button class="btn-icon theme-toggle" id="theme-toggle" aria-label="Alternar tema" title="Alternar tema">
+          <span id="theme-icon">🌙</span>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm" id="nav-cta-btn">Fale Comigo</a>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Abrir menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="container hero-grid">
+
+        <!-- Left: Hero Text & Pitch -->
+        <div class="hero-text-content">
+          <div class="hero-terminal-pill">
+            <span class="pulse-dot"></span>
+            <span>status: pronto para estágio &amp; júnior • recife-pe</span>
+          </div>
+
+          <h1 class="hero-title">
+            Luiz Fernando <br>
+            <span class="gradient-text">Gervásio</span>
+          </h1>
+
+          <div class="hero-role-line">
+            Desenvolvedor Frontend &amp; Graduando em ADS
+          </div>
+
+          <p class="hero-bio">
+            Estudante do 3º período de <strong>Análise e Desenvolvimento de Sistemas (FICR)</strong> e <strong>Técnico
+              em Redes de Computadores</strong>. Desenvolvo interfaces web com HTML, CSS, JavaScript e React, com foco
+            em código limpo, usabilidade e aprendizado contínuo
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary" id="hero-btn-projects">
+              <span>Explorar Repositórios</span>
+              <span>➔</span>
+            </a>
+            <a href="https://wa.me/5581983097134" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"
+              id="hero-btn-whatsapp">
+              <span>WhatsApp Direto</span>
+            </a>
+            <a href="mailto:Luizle54@gmail.com" class="btn btn-outline" id="hero-btn-email" title="Enviar E-mail">
+              <span>✉️ Luizle54@gmail.com</span>
+            </a>
+          </div>
+
+          <!-- Quick Social Pills -->
+          <div class="hero-socials">
+            <a href="https://www.linkedin.com/in/luiz-fernando-0b28901a5" target="_blank" rel="noopener noreferrer"
+              class="social-pill-btn" title="LinkedIn">
+              <span>💼 LinkedIn</span>
+            </a>
+            <a href="https://wa.me/5581983097134" target="_blank" rel="noopener noreferrer" class="social-pill-btn"
+              title="WhatsApp">
+              <span>💬 WhatsApp</span>
+            </a>
+            <a href="https://instagram.com/Fernando_Tpcx" target="_blank" rel="noopener noreferrer"
+              class="social-pill-btn" title="Instagram">
+              <span>📸 Instagram</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Profile Photo + Developer Terminal Card -->
+        <div class="hero-terminal-wrapper">
+
+          <!-- Profile Photo -->
+          <div class="hero-avatar-wrap">
+            <div class="hero-avatar-ring">
+              <img
+                src="assets/luiz-photo.png"
+                alt="Luiz Fernando Gervásio da Silva"
+                class="hero-avatar-img"
+                loading="eager"
+              >
+            </div>
+            <div class="hero-avatar-status">
+              <span class="pulse-dot"></span>
+              <span>open to work</span>
+            </div>
+          </div>
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="terminal-dot dot-red"></span>
+                <span class="terminal-dot dot-yellow"></span>
+                <span class="terminal-dot dot-green"></span>
+              </div>
+              <span class="terminal-tab-title">developer_profile.json</span>
+              <span class="code-font" style="font-size: 0.75rem; color: var(--accent-cyan);">utf-8</span>
+            </div>
+
+            <div class="terminal-body">
+              <div class="terminal-line">
+                <span class="terminal-key">nome: Luiz Fernando Gervásio da Silva</span>
+              </div>
+              <div class="terminal-line">
+                <span class="terminal-key">Formação 1: ADS (3º Período) • FICR</span>
+              </div>
+              <div class="terminal-line">
+                <span class="terminal-key">Formção 2: Técnico em Redes (ETE Lucílio Ávila)</span>
+              </div>
+              <div class="terminal-line">
+                <span class="terminal-key">Curso extra:Inglês (2 anos ABA)</span>
+              </div>
+              <div class="terminal-line">
+                <span class="terminal-key">Emprego atual: Auxiliar Técnico na Rsat Segurança</span>
+              </div>
+              <div class="terminal-line" style="margin-top: 1rem;">
+                <span class="terminal-prompt"></span>
+                <span class="terminal-key">Stacks tecnicas:</span>
+              </div>
+              <div class="terminal-tags-grid">
+                <span class="terminal-tag">React.js</span>
+                <span class="terminal-tag">JavaScript (ES6+)</span>
+                <span class="terminal-tag">HTML5 / CSS3</span>
+                <span class="terminal-tag">TypeScript</span>
+                <span class="terminal-tag">Suporte Técnico</span>
+                <span class="terminal-tag">Git / GitHub</span>
+                <span class="terminal-tag">Ferramentas de IA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION (BENTO GRID) -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-terminal-tag">01. SOBRE_MIM</div>
+          <h2 class="section-title">Perfil &amp; <span class="gradient-text">Trajetória</span></h2>
+          <p class="section-subtitle">Formação acadêmica em ADS, base técnica em redes e prática em desenvolvimento
+            frontend.</p>
+        </div>
+
+        <div class="about-bento-grid">
+          <!-- Left Bento: Biography -->
+          <div class="bento-card">
+            <h3 class="bento-card-title">
+              <span>⚡</span> Formação &amp; Foco de Atuação
+            </h3>
+            <div class="about-bio-text">
+              <p>
+                Iniciei minha trajetória na área de tecnologia durante o ensino médio técnico, onde me formei em
+                <strong>Redes de Computadores</strong> e adquiri noções sólidas de infraestrutura, cabeamento e
+                conectividade.
+              </p>
+              <p>
+                Atualmente curso o <strong>3º período de Análise e Desenvolvimento de Sistemas</strong> na <em>Faculdade
+                  Imaculada da Conceição do Recife (FICR)</em> e possuo 2 anos de formação em <strong>Inglês</strong>
+                pela <em>ABA Education</em>.
+              </p>
+              <p>
+                Pratico desenvolvimento <strong>Frontend</strong> utilizando HTML5, CSS3, JavaScript e React, aplicando
+                ferramentas de inteligência artificial no dia a dia como suporte para agilidade na resolução de
+                problemas e aprendizado, Além de buscar novas oportunidads na area de T.I para impulsionar minha carreira, tenho vontade de aprende e sou disposto a novos desafios.
+              </p>
+            </div>
+
+            <div class="about-highlights-matrix">
+              <div class="matrix-item">
+                <span>⚛️</span> <span>React &amp; JavaScript</span>
+              </div>
+              <div class="matrix-item">
+                <span>🎨</span> <span>HTML5 &amp; CSS3 Responsivo</span>
+              </div>
+              <div class="matrix-item">
+                <span>🌐</span> <span>Técnico em Redes (TCP/IP)</span>
+              </div>
+              <div class="matrix-item">
+                <span>🇺🇸</span> <span>Inglês Técnico &amp; Leitura</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Bento: Stats Column -->
+          <div class="bento-card stats-column">
+            <div class="stat-box">
+              <div class="stat-num" data-target="3">0</div>
+              <div class="stat-desc">º Período em ADS (FICR)</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-num" data-target="2">0</div>
+              <div class="stat-desc">Anos Formação Técnica em Redes</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-num" data-target="2">0</div>
+              <div class="stat-desc">Anos de Inglês (ABA Education)</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-num" data-target="2">0</div>
+              <div class="stat-desc">Experiências Profissionais</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+ 
+    <section class="section" id="skills" style="background: var(--bg-surface-elevated);">
+      <div class="container">
+        <div class="section-header center">
+          <div class="section-terminal-tag">02. TECH_STACK</div>
+          <h2 class="section-title">Conhecimentos <span class="gradient-text">Técnicos</span></h2>
+          <p class="section-subtitle">Tecnologias, linguagens e ferramentas utilizadas em projetos e rotinas de estudo.
+          </p>
+        </div>
+
+        
+        <div class="skills-controls-bar">
+          <button class="tech-tab-btn active" data-category="all">todas_as_tecnologias</button>
+        </div>
+
+      
+        <div class="skills-matrix-grid" id="skills-matrix-grid">
+        
+          <div class="skill-matrix-card" data-category="frontend">
+            <div class="skill-matrix-top">
+              <div class="skill-matrix-title">
+                <span>⚛️</span> <span>React.js</span>
+              </div>
+              <span class="skill-status-tag">Projetos Práticos</span>
+            </div>
+            <p class="skill-matrix-desc">Criação de interfaces modulares, hooks, componentização e consumo de APIs.</p>
+          </div>
+
+          <div class="skill-matrix-card" data-category="frontend">
+            <div class="skill-matrix-top">
+              <div class="skill-matrix-title">
+                <span>🎨</span> <span>HTML5 &amp; CSS3</span>
+              </div>
+              <span class="skill-status-tag">Sólido</span>
+            </div>
+            <p class="skill-matrix-desc">Estruturação semântica, Flexbox, CSS Grid, variáveis e design responsivo.</p>
+          </div>
+
+          <!-- 4. TypeScript -->
+          <div class="skill-matrix-card" data-category="frontend backend">
+            <div class="skill-matrix-top">
+              <div class="skill-matrix-title">
+                <span>📘</span> <span>TypeScript</span>
+              </div>
+              <span class="skill-status-tag">Em Estudo</span>
+            </div>
+            <p class="skill-matrix-desc">Noções de tipagem estática e interfaces aplicadas a componentes React.</p>
+          </div>
+
+
+
+          <!-- 6. Suporte Técnico & Hardware -->
+          <div class="skill-matrix-card" data-category="infra">
+            <div class="skill-matrix-top">
+              <div class="skill-matrix-title">
+                <span>🛠️</span> <span>Suporte &amp; Hardware</span>
+              </div>
+              <span class="skill-status-tag">Prática Profissional</span>
+            </div>
+            <p class="skill-matrix-desc">Diagnóstico de falhas em equipamentos, sistemas operacionais e suporte a
+              usuários.</p>
+          </div>
+
+          <!-- 7. Ferramentas de IA -->
+          <div class="skill-matrix-card" data-category="tools">
+            <div class="skill-matrix-top">
+              <div class="skill-matrix-title">
+                <span>🤖</span> <span>Ferramentas de IA</span>
+              </div>
+              <span class="skill-status-tag">Produtividade</span>
+            </div>
+            <p class="skill-matrix-desc">Uso de LLMs para apoio ao fluxo de estudo, testes de código e aceleração de
+              desenvolvimento.</p>
+          </div>
+
+
+
+          <!-- 9. Node.js -->
+          <div class="skill-matrix-card" data-category="backend">
+            <div class="skill-matrix-top">
+              <div class="skill-matrix-title">
+                <span>🟢</span> <span>Node.js &amp; APIs</span>
+              </div>
+              <span class="skill-status-tag">Fundamentos</span>
+            </div>
+            <p class="skill-matrix-desc">Fundamentos de backend em JavaScript, criação de rotas simples e consumo REST.
+            </p>
+          </div>
+
+
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- REPOSITORIES & PROJECTS SECTION -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-terminal-tag">03. REPOSITORIOS_E_PROJETOS</div>
+          <h2 class="section-title">Repositórios &amp; <span class="gradient-text">Projetos</span></h2>
+          <p class="section-subtitle">Aplicações desenvolvidas para estudo e projetos práticos. Alterne entre os modelos
+            de visualização.</p>
+        </div>
+
+        <!-- Controls: Category Filters + View Mode Switcher -->
+        <div class="projects-header-controls">
+          <div class="project-category-filters">
+            <button class="p-filter-btn active" data-filter="all">Pojeto academico</button>
+          </div>
+
+          <div class="view-switcher-toggle">
+            <button class="v-switch-btn active" data-view="repos" title="Modelo Repositório (Estilo GitHub)">
+              <span>📁 Modelo Repositório</span>
+            </button>
+            
+        <!-- MODEL 1: GITHUB REPOSITORIES GRID (DEFAULT) -->
+   
+
+          <!-- Repo 1: Universidade Heineken -->
+          <div class="repo-card-item" data-category="frontend" data-project-id="heineken"
+            style="border-left: 3px solid #10b981;">
+            <div class="repo-card-header">
+              <a href="https://universidade-heineken-front-mu.vercel.app/login" target="_blank"
+                rel="noopener noreferrer" class="repo-slug-title">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+                <span>luizfernando / <strong>universidade-heineken-front</strong></span>
+              </a>
+              <span class="repo-visibility-badge" style="color: #10b981; border-color: rgba(16, 185, 129, 0.3);">★
+                Vercel Deploy</span>
+            </div>
+
+            <p class="repo-desc-text">
+              Portal web desenvolvido em React para apoiar a integração de novos colaboradores, com módulos em vídeo,
+              questionários de fixação e navegação responsiva.
+            </p>
+
+            <div class="repo-tags-wrap">
+              <span class="repo-topic-pill">react</span>
+              <span class="repo-topic-pill">javascript</span>
+              <span class="repo-topic-pill">css3</span>
+              <span class="repo-topic-pill">onboarding</span>
+              <span class="repo-topic-pill">vercel</span>
+            </div>
+
+            <div class="repo-meta-footer">
+              <div class="repo-lang-info">
+                <span class="lang-color-circle" style="background-color: #38bdf8;"></span>
+                <span>React / JS</span>
+              </div>
+              <div class="repo-actions-btns">
+                <a href="https://universidade-heineken-front-mu.vercel.app/login" target="_blank"
+                  rel="noopener noreferrer" class="repo-action-btn btn-accent">Deploy ↗</a>
+                <button class="repo-action-btn open-modal-trigger" data-project-id="heineken">Detalhes</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Repo 2: Synapse.AI -->
+
+
+         
+           
+        </div>
+
+        <!-- MODEL 2: VISUAL CARDS GRID (ALTERNATIVE) -->
+        <div class="visual-cards-grid" id="visual-cards-grid" style="display: none;">
+
+         
+          <div class="visual-project-card" data-category="frontend" data-project-id="heineken">
+            <div class="visual-thumb">
+              <img src="assets/project-heineken.svg" alt="Universidade Heineken Onboarding" loading="lazy" width="800"
+                height="500">
+              <div class="visual-overlay">
+                <a href="https://universidade-heineken-front-mu.vercel.app/login" target="_blank"
+                  rel="noopener noreferrer" class="btn btn-primary btn-sm">Acessar Online ↗</a>
+                <button class="btn btn-secondary btn-sm open-modal-trigger" data-project-id="heineken">Detalhes</button>
+              </div>
+            </div>
+            <div class="visual-body">
+              <span class="visual-tag">Projeto Web / React (Vercel)</span>
+              <h3 class="visual-title">Universidade Heineken • Portal Onboarding</h3>
+              <p class="visual-desc">
+                Portal web desenvolvido em React para apoiar a integração de novos colaboradores, com módulos em vídeo e
+                questionários de fixação.
+              </p>
+              <div class="visual-stack-pills">
+                <span class="stack-pill">React</span>
+                <span class="stack-pill">JavaScript</span>
+                <span class="stack-pill">CSS3</span>
+                <span class="stack-pill">Vercel Deploy</span>
+              </div>
+              <div class="visual-footer">
+                <a href="https://universidade-heineken-front-mu.vercel.app/login" target="_blank"
+                  rel="noopener noreferrer" style="color: var(--accent-emerald); font-weight: 600; font-size: 0.85rem;">
+                  Acessar no Ar ➔
+                </a>
+                <button class="btn-icon open-modal-trigger" data-project-id="heineken" title="Ver Detalhes">
+                  🔍
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="visual-project-card" data-category="ai" data-project-id="ai">
+            <div class="visual-thumb">
+              <img src="assets/project-ai.svg" alt="Synapse AI Studio" loading="lazy" width="800" height="500">
+              <div class="visual-overlay">
+                <button class="btn btn-primary btn-sm open-modal-trigger" data-project-id="ai">Ver Detalhes</button>
+              </div>
+            </div>
+            <div class="visual-body">
+              <span class="visual-tag">Interface Web / IA</span>
+              <h3 class="visual-title">Synapse.AI • Gerador de Prompts</h3>
+              <p class="visual-desc">
+                Interface interativa para criação, organização e teste de prompts assistidos por IA para suporte ao
+                desenvolvimento.
+              </p>
+              <div class="visual-stack-pills">
+                <span class="stack-pill">Python</span>
+                <span class="stack-pill">IA Generativa</span>
+                <span class="stack-pill">React</span>
+                <span class="stack-pill">JavaScript</span>
+              </div>
+              <div class="visual-footer">
+                <button class="open-modal-trigger" data-project-id="ai"
+                  style="color: var(--accent-cyan); font-weight: 600; font-size: 0.85rem; cursor: pointer;">
+                  Ver Detalhes ➔
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="visual-project-card" data-category="frontend" data-project-id="saas">
+            <div class="visual-thumb">
+              <img src="assets/project-saas.svg" alt="Dashboard NetControl" loading="lazy" width="800" height="500">
+              <div class="visual-overlay">
+                <button class="btn btn-primary btn-sm open-modal-trigger" data-project-id="saas">Ver Detalhes</button>
+              </div>
+            </div>
+            <div class="visual-body">
+              <span class="visual-tag">Frontend / Suporte &amp; Redes</span>
+              <h3 class="visual-title">NetControl • Painel de Suporte &amp; Redes</h3>
+              <p class="visual-desc">
+                Protótipo de dashboard para acompanhamento de chamados de suporte técnico e visualização de status
+                básico de conectividade.
+              </p>
+              <div class="visual-stack-pills">
+                <span class="stack-pill">React</span>
+                <span class="stack-pill">JavaScript</span>
+                <span class="stack-pill">CSS Grid</span>
+                <span class="stack-pill">Redes TCP/IP</span>
+              </div>
+              <div class="visual-footer">
+                <button class="open-modal-trigger" data-project-id="saas"
+                  style="color: var(--accent-cyan); font-weight: 600; font-size: 0.85rem; cursor: pointer;">
+                  Ver Detalhes ➔
+                </button>
+              </div>
+            </div>
+          </div>
+
+        <div class="visual-project-card" data-category="frontend" data-project-id="ecommerce">
+            <div class="visual-thumb">
+              <img src="assets/project-ecommerce.svg" alt="NexusStore UI" loading="lazy" width="800" height="500">
+              <div class="visual-overlay">
+                <button class="btn btn-primary btn-sm open-modal-trigger" data-project-id="ecommerce">Ver
+                  Detalhes</button>
+              </div>
+            </div>
+            <div class="visual-body">
+              <span class="visual-tag">Frontend / E-Commerce</span>
+              <h3 class="visual-title">NexusStore • Interface E-Commerce</h3>
+              <p class="visual-desc">
+                Interface para comércio eletrônico com catálogo de produtos, filtros por categoria e gerenciamento de
+                estado do carrinho.
+              </p>
+              <div class="visual-stack-pills">
+                <span class="stack-pill">JavaScript</span>
+                <span class="stack-pill">React</span>
+                <span class="stack-pill">HTML5 / CSS3</span>
+                <span class="stack-pill">Flexbox &amp; Grid</span>
+              </div>
+              <div class="visual-footer">
+                <button class="open-modal-trigger" data-project-id="ecommerce"
+                  style="color: var(--accent-cyan); font-weight: 600; font-size: 0.85rem; cursor: pointer;">
+                  Ver Detalhes ➔
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience" style="background: var(--bg-surface-elevated);">
+      <div class="container">
+        <div class="section-header center">
+          <div class="section-terminal-tag">04. TRAJETORIA</div>
+          <h2 class="section-title">Experiência Profissional &amp; <span class="gradient-text">Formação</span></h2>
+          <p class="section-subtitle">Histórico profissional e formação acadêmica contínua.</p>
+        </div>
+
+        <div class="trajectory-timeline-wrapper">
+        <div class="trajectory-item">
+            <div class="timeline-bullet"></div>
+            <div class="trajectory-card">
+              <div class="trajectory-card-header">
+                <h3 class="trajectory-role">Auxiliar Técnico</h3>
+                <span class="trajectory-period">12/2025 – Presente (Atual)</span>
+              </div>
+              <div class="trajectory-institution">🏢 Rsat Segurança • Recife - PE</div>
+              <p class="trajectory-desc">
+                • Atendimento ao público e suporte operacional a clientes.<br>
+                • Apoio na identificação e resolução de demandas técnicas em equipamentos e sistemas.<br>
+                • Acompanhamento e execução de atividades operacionais junto à equipe.<br>
+                • Resolução de rotinas práticas e comunicação interna no ambiente de trabalho.
+              </p>
+            </div>
+          </div>
+
+          <div class="trajectory-item">
+            <div class="timeline-bullet"></div>
+            <div class="trajectory-card">
+              <div class="trajectory-card-header">
+                <h3 class="trajectory-role">Assistente Administrativo</h3>
+                <span class="trajectory-period">02/2025 – 11/2025</span>
+              </div>
+              <div class="trajectory-institution">🚚 Transportadora Asa de Prata • Recife - PE</div>
+              <p class="trajectory-desc">
+                • Execução de rotinas administrativas e controle de fluxos operacionais internos.<br>
+                • Atendimento a clientes, fornecedores e parceiros.<br>
+                • Organização e acompanhamento de relatórios, cadastros e documentos operacionais.<br>
+                • Trabalho conjunto com diferentes setores para cumprimento de rotinas da empresa.
+              </p>
+            </div>
+          </div>
+
+         <div class="trajectory-item">
+            <div class="timeline-bullet"></div>
+            <div class="trajectory-card" style="border-left: 3px solid var(--accent-cyan);">
+              <div class="trajectory-card-header">
+                <h3 class="trajectory-role">Análise e Desenvolvimento de Sistemas (ADS)</h3>
+                <span class="trajectory-period">3º Período — Cursando</span>
+              </div>
+              <div class="trajectory-institution">🎓 Faculdade Imaculada da Conceição do Recife (FICR)</div>
+              <p class="trajectory-desc">
+                Graduação superior com foco em desenvolvimento web, lógica de programação, estruturas de dados,
+                modelagem de banco de dados e engenharia de software.
+              </p>
+            </div>
+          </div>
+
+          
+          <div class="trajectory-item">
+            <div class="timeline-bullet"></div>
+            <div class="trajectory-card">
+              <div class="trajectory-card-header">
+                <h3 class="trajectory-role">Técnico em Redes de Computadores</h3>
+                <span class="trajectory-period">2022 – 2024 (Concluído)</span>
+              </div>
+              <div class="trajectory-institution">🏫 Escola Técnica Estadual Professor Lucílio Ávila Pessoa</div>
+              <p class="trajectory-desc">
+                Formação técnica em arquitetura de redes, protocolos TCP/IP, cabeamento estruturado, configuração de
+                roteadores/switches e suporte a sistemas.
+              </p>
+            </div>
+          </div>
+
+          <div class="trajectory-item">
+            <div class="timeline-bullet"></div>
+            <div class="trajectory-card">
+              <div class="trajectory-card-header">
+                <h3 class="trajectory-role">Curso de Inglês (2 Anos)</h3>
+                <span class="trajectory-period">Concluído</span>
+              </div>
+              <div class="trajectory-institution">🌍 ABA Education</div>
+              <p class="trajectory-desc">
+                Desenvolvimento de habilidades linguísticas com foco em compreensão de textos técnicos, documentações de
+                programação e conversação básica.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <section class="section" id="competencies">
+      <div class="container">
+        <div class="section-header center">
+          <div class="section-terminal-tag">05. COMPETENCIAS</div>
+          <h2 class="section-title">Áreas de <span class="gradient-text">Atuação &amp; Conhecimento</span></h2>
+          <p class="section-subtitle">Habilidades práticas aplicadas ao desenvolvimento web, suporte e rotinas técnicas.
+          </p>
+        </div>
+
+        <div class="competencies-grid">
+        <div class="competency-card">
+            <div class="competency-icon-box">💻</div>
+            <h3 class="competency-title">Desenvolvimento Frontend</h3>
+            <p class="competency-desc">
+              Construção de interfaces web responsivas e interativas utilizando HTML5, CSS3, JavaScript e React.
+            </p>
+            <ul class="competency-points">
+              <li>Páginas e componentes responsivos</li>
+              <li>Consumo de dados e APIs no frontend</li>
+              <li>Código limpo, organizado e modular</li>
+            </ul>
+          </div>
+
+          <div class="competency-card">
+            <div class="competency-icon-box">🌐</div>
+            <h3 class="competency-title">Suporte Técnico &amp; Redes</h3>
+            <p class="competency-desc">
+              Diagnóstico de problemas em equipamentos, sistemas operacionais e noções de conectividade de rede.
+            </p>
+            <ul class="competency-points">
+              <li>Fundamentos de redes TCP/IP e conectividade</li>
+              <li>Diagnóstico de falhas e manutenção básica</li>
+              <li>Atendimento e suporte ao usuário</li>
+            </ul>
+          </div>
+
+          
+          <div class="competency-card">
+            <div class="competency-icon-box">🤖</div>
+            <h3 class="competency-title">Uso de IA no Desenvolvimento</h3>
+            <p class="competency-desc">
+              Emprego de ferramentas de IA para auxílio em testes, documentação, prototipagem e produtividade.
+            </p>
+            <ul class="competency-points">
+              <li>Elaboração e teste de prompts</li>
+              <li>Apoio na escrita e revisão de código</li>
+              <li>Agilidade na prototipagem de soluções</li>
+            </ul>
+          </div>
+
+          
+          <div class="competency-card">
+            <div class="competency-icon-box">📋</div>
+            <h3 class="competency-title">Rotinas Administrativas &amp; Atendimento</h3>
+            <p class="competency-desc">
+              Vivência corporativa com foco em organização de processos, atendimento direto e trabalho em equipe.
+            </p>
+            <ul class="competency-points">
+              <li>Comunicação direta e cordial</li>
+              <li>Organização de documentos e relatórios</li>
+              <li>Compromisso com prazos e rotinas</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  
+    <section class="section" id="contact" style="background: var(--bg-surface-elevated);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-terminal-tag">06. CONTATO</div>
+          <h2 class="section-title">Canais de <span class="gradient-text">Comunicação</span></h2>
+          <p class="section-subtitle">Estou à disposição para oportunidades de estágio, vagas júnior e projetos.</p>
+        </div>
+
+        <div class="contact-grid-layout">
+        <div class="contact-info-cards-list">
+
+            
+            <div class="contact-channel-card">
+              <div class="channel-icon-wrap">
+                <span class="channel-icon">✉️</span>
+                <div>
+                  <div class="channel-label">E-mail Direto</div>
+                  <div class="channel-val">Luizle54@gmail.com</div>
+                </div>
+              </div>
+              <button class="btn btn-outline btn-sm" id="copy-email-btn" data-clipboard="Luizle54@gmail.com"
+                title="Copiar e-mail">
+                Copiar
+              </button>
+            </div>
+
+            
+            <div class="contact-channel-card">
+              <div class="channel-icon-wrap">
+                <span class="channel-icon">💬</span>
+                <div>
+                  <div class="channel-label">WhatsApp</div>
+                  <div class="channel-val">(81) 98309-7134</div>
+                </div>
+              </div>
+              <a href="https://wa.me/5581983097134" target="_blank" rel="noopener noreferrer"
+                class="btn btn-primary btn-sm">
+                Conversar
+              </a>
+            </div>
+
+           
+            <div class="contact-channel-card">
+              <div class="channel-icon-wrap">
+                <span class="channel-icon">💼</span>
+                <div>
+                  <div class="channel-label">LinkedIn</div>
+                  <div class="channel-val">in/luiz-fernando-0b28901a5</div>
+                </div>
+              </div>
+              <a href="https://www.linkedin.com/in/luiz-fernando-0b28901a5" target="_blank" rel="noopener noreferrer"
+                class="btn btn-outline btn-sm">
+                Acessar
+              </a>
+            </div>
+
+            
+            <div class="contact-channel-card">
+              <div class="channel-icon-wrap">
+                <span class="channel-icon">📸</span>
+                <div>
+                  <div class="channel-label">Instagram</div>
+                  <div class="channel-val">@Fernando_Tpcx</div>
+                </div>
+              </div>
+              <a href="https://instagram.com/Fernando_Tpcx" target="_blank" rel="noopener noreferrer"
+                class="btn btn-outline btn-sm">
+                Seguir
+              </a>
+            </div>
+
+            <div class="contact-channel-card">
+              <div class="channel-icon-wrap">
+                <span class="channel-icon">📍</span>
+                <div>
+                  <div class="channel-label">Localização &amp; Disponibilidade</div>
+                  <div class="channel-val">Recife - PE • Presencial e Remoto</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-info">
+          <div class="logo">
+            <span class="logo-badge">&lt;/&gt;</span>
+            <span>LUIZ<span class="gradient-text">.DEV</span></span>
+          </div>
+          <p>
+            Luiz Fernando Gervásio da Silva • Desenvolvimento Web &amp; Redes | Recife-PE.
+          </p>
+        </div>
+      </footer>
+
+  
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true" role="dialog">
+    <div class="modal-content-box">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Fechar Modal">✕</button>
+
+      <div class="modal-cover-img">
+        <img id="modal-img" src="" alt="Detalhes do Projeto">
+      </div>
+
+      <div class="modal-main-body">
+        <div class="modal-header-tag" id="modal-category">Categoria</div>
+        <h3 class="modal-main-title" id="modal-title">Título do Projeto</h3>
+        <p class="modal-full-desc" id="modal-desc">Descrição detalhada do projeto.</p>
+
+        <h4
+          style="font-size: 0.95rem; font-family: var(--font-mono); margin-bottom: 0.75rem; color: var(--accent-cyan);">
+          // principais_recursos
+        </h4>
+        <ul class="modal-checklist" id="modal-features">
+        </ul>
+
+        <div class="modal-tags-container" id="modal-tags">
+         
+        </div>
+
+        <div class="modal-cta-actions">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" id="modal-live-link">
+            <span>Acessar Projeto Ao Vivo ↗</span>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" id="modal-code-link">
+            <span>Repositório GitHub &lt;/&gt;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+  <div class="toast-container" id="toast-container"></div>
+
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
