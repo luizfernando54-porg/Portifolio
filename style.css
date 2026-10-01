@@ -7,43 +7,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700;800&display=swap');
 
 :root {
-  /* Dark Theme Variables (Default Obsidian Theme) */
-  --bg-root: #07090e;
-  --bg-surface: #0d1117;
-  --bg-surface-elevated: #161b22;
-  --bg-surface-hover: #1f242c;
-  --bg-surface-glass: rgba(13, 17, 23, 0.75);
-  --bg-input: rgba(22, 27, 34, 0.85);
+  /* Dark Theme Variables (Brooklyn Nine-Nine Theme) */
+  --bg-root: #0b1a30; /* NYPD Dark Navy */
+  --bg-surface: #0f2a4a;
+  --bg-surface-elevated: #15355a;
+  --bg-surface-hover: #1c4270;
+  --bg-surface-glass: rgba(15, 42, 74, 0.75);
+  --bg-input: rgba(21, 53, 90, 0.85);
 
-  --text-primary: #f0f6fc;
-  --text-secondary: #8b949e;
-  --text-muted: #6e7681;
-  --text-inverse: #07090e;
+  --text-primary: #ffffff;
+  --text-secondary: #a6b8c7;
+  --text-muted: #748b9f;
+  --text-inverse: #0b1a30;
 
   /* Accent Color Palette */
-  --accent-cyan: #38bdf8;
-  --accent-emerald: #10b981;
-  --accent-indigo: #6366f1;
+  --accent-cyan: #f5b82e; /* B99 Yellow */
+  --accent-emerald: #ffd700; /* Gold */
+  --accent-indigo: #0055a4; /* Blue */
   --accent-violet: #8b5cf6;
   --accent-amber: #f59e0b;
 
   /* Brand Gradients */
-  --gradient-cyber: linear-gradient(135deg, #38bdf8 0%, #6366f1 50%, #a855f7 100%);
-  --gradient-emerald: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
-  --gradient-card: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.01) 100%);
-  --gradient-glow: radial-gradient(circle at 50% 0%, rgba(56, 189, 248, 0.15) 0%, transparent 70%);
+  --gradient-cyber: linear-gradient(135deg, #f5b82e 0%, #ffd700 100%);
+  --gradient-emerald: linear-gradient(135deg, #ffd700 0%, #f5b82e 100%);
+  --gradient-card: linear-gradient(180deg, rgba(255, 215, 0, 0.08) 0%, rgba(255, 215, 0, 0.02) 100%);
+  --gradient-glow: radial-gradient(circle at 50% 0%, rgba(245, 184, 46, 0.15) 0%, transparent 70%);
 
   /* Borders & Dividers */
-  --border-subtle: rgba(240, 246, 252, 0.08);
-  --border-medium: rgba(240, 246, 252, 0.16);
-  --border-focus: #38bdf8;
-  --border-glow: rgba(56, 189, 248, 0.35);
+  --border-subtle: rgba(245, 184, 46, 0.2);
+  --border-medium: rgba(245, 184, 46, 0.4);
+  --border-focus: #f5b82e;
+  --border-glow: rgba(245, 184, 46, 0.35);
 
   /* Shadows */
   --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.4);
   --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
   --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.6);
-  --shadow-cyan-glow: 0 0 30px rgba(56, 189, 248, 0.2);
+  --shadow-cyan-glow: 0 0 30px rgba(245, 184, 46, 0.2);
 
   /* Typography */
   --font-heading: 'Space Grotesk', -apple-system, sans-serif;
@@ -589,17 +589,13 @@ button, input, textarea {
   display: block;
 }
 
-.hero-avatar-status {
-  display: inline-flex;
-  align-items: center;
+.hero-avatar-socials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 0.5rem;
-  padding: 0.3rem 0.9rem;
-  background: rgba(16, 185, 129, 0.08);
-  border: 1px solid rgba(16, 185, 129, 0.25);
-  border-radius: var(--radius-full);
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  color: var(--accent-emerald);
+  margin-top: 0.5rem;
+  max-width: 260px;
 }
 
 /* Hero Terminal Console Card */
@@ -648,7 +644,7 @@ button, input, textarea {
 }
 
 .terminal-line {
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.25rem;
   display: flex;
   align-items: baseline;
   gap: 0.6rem;
